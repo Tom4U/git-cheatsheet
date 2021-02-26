@@ -28,6 +28,16 @@
 * Ausgabe wer Zeilen einer Datei geändert hat und wann: `git blame --color-lines [PFAD_ZUR_DATEI]`
 * Commits finden, die eine bestimmte Datei verändert haben: `git log --follow [PFAD_ZUR_DATEI]`
 * Formatierte Ausgabe (Beispiel): `git log --pretty=format:"%h committed by %an %ar with title: %s"`
+* Commits für bestimmten Zeitpunkt auflisten: 
+  * Zeitangaben:
+    * Relativ: `"2 days ago"` oder `"5 hours ago"`
+    * Exaktes Datum: `2021-02-26`
+    * Exaktes Datum und Zeit: `2021-02-26T13:00:00`
+  * Nach einem bestimmten Zeitpunkt: `git log --since [ZEITANGABE]`
+  * Bis zu einem bestimmten Zeitpunkt: `git log --until [ZEITANGABE]`
+* Commits für einen bestimmten Ersteller auflisten: `git log --author "[NAME_ODER_TEIL_DES_NAMENS]"`
+* Commits mit bestimmtem Suchbegriff in Commit Message auflisten: `git log --grep [SUCHBEGRIFF]`
+* Commits auflisten, die bestimmten Begriff in Dateien hinzufügen oder entfernen: `git log -S [SUCHBEGRIFF]`
 
 ### Arbeitsbereich sichern und auf HEAD zurücksetzen
 * Schnell sichern: `git stash`
