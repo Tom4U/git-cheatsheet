@@ -3,6 +3,20 @@
 ### Git Dokumentation für einen Befehl
 `git help [BEFEHL]`
 
+### Konfiguration
+* Bereiche:
+  * Systemweit: `--system`
+  * Benutzerweit: `--global`
+  * Lokal im Repository (Standard): `--local`
+* Konfiguration hinzufügen: `git config ([BEREICH]) [SEKTION].[SCHLUESSEL] [WERT]`
+ * Beispiel - Benutzername lokal hinzufügen: `git config user.name "Vorname Nachname"`
+ * Beispiel - Benutzername benutzerweit hinzufügen: `git config --global user.name "Vorname Nachname"`
+* Alle Variablen und Werte ausgeben: `git config ([BEREICH]) -l`
+* Wert eines Schlüssels ausgeben: `git config ([BEREICH]) [SEKTION].[SCHLUESSEL]`
+ * Beispiel - Benutzerweite Konfiguration für Benutzername ausgeben: `git config --global user.name`
+* Einen Eintrag entfernen: `git config ([BEREICH]) --unset [SEKTION].[SCHLUESSEL]`
+* Konfiguration im Editor bearbeiten: `git config ([BEREICH]) --edit`
+
 ### Erstellen eines Repository
 * Mit Arbeitsbereich: `git init`
 * Ohne Arbeitsbereich: `git init --bare`
