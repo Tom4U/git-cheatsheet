@@ -15,7 +15,7 @@
 * Branch erstellen: `git branch [BRANCHNAME]`
 * Branch in Arbeitsbereich laden: `git switch [BRANCHNAME]`
 * Branch erstellen und in Arbeitsbereich laden: `git switch -c [BRANCHNAME]`
-* Neuen Branch mit anderem Commit, als HEAD starten und in Arbeitsbereich laden: `git switch -c [BRANCHNAME] [COMMIT]
+* Neuen Branch mit anderem Commit, als HEAD starten und in Arbeitsbereich laden: `git switch -c [BRANCHNAME] [COMMIT]`
 * Branch ohne Historie erstellen: `git switch --orphan [BRANCHNAME]`
 * Branches anzeigen, die bestimmten Commit enthalten: `git branch --contains [COMMIT]`
 * Lokale und entfernte Branches anzeigen: `git branch -a`
